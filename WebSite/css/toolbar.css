@@ -1,0 +1,39 @@
+﻿.multi:hover{
+    background-color: lightgoldenrodyellow;
+}
+.multi{
+    max-width:200px;
+    border-style: outset;
+    border-width: 3px;
+    border-radius: 25px;
+    float:left;
+    background-color:whitesmoke;
+}
+
+.toolbar {
+    color: navajowhite;
+    font-size: medium;
+    font-family: Verdana;
+}
+.toolbar table{
+    margin-left:30px;
+    float : left;
+}
+
+#foot{
+    background-color:steelblue;
+    height:150px;
+}
+
+#foot_menu{
+    float:left;
+    width:100px;
+}
+
+#foot_panel{
+    margin-left:110px;
+}
+
+#show_btn{
+    position:fixed;
+}

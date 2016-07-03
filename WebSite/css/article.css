@@ -1,0 +1,40 @@
+﻿#sidewrap {
+    position:fixed;
+    width:27%;
+    margin-left:72%;
+    text-anchor:middle;
+}
+
+.title{
+    color:brown;
+    font-size:20px;
+    margin:10px;
+}
+
+#article {
+    position:fixed;
+    width:27%;
+    margin-left:72%;
+}
+
+#article li{
+    height:400px;
+    color: lightgrey;
+    background-color:whitesmoke;
+    transition: background-color 0.5s ease;
+}
+
+#article a{
+    color: lightgrey;
+}
+
+
+#article .hover{
+    color:black;
+    background-color : lightgoldenrodyellow;
+    transition: background-color 0.5s ease;
+}
+
+#article .hover a{
+    color:black;
+}

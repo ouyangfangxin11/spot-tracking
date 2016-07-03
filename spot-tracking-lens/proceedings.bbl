@@ -1,0 +1,149 @@
+\begin{thebibliography}{10}
+
+\bibitem{alsakran2011streamit}
+J.~Alsakran, Y.~Chen, Y.~Zhao, J.~Yang, and D.~Luo.
+\newblock Streamit: Dynamic visualization and interactive exploration of text
+  streams.
+\newblock In {\em Pacific Visualization Symposium (PacificVis), 2011 IEEE},
+  pages 131--138. IEEE, 2011.
+
+\bibitem{archambault_animation_2011}
+D.~Archambault, H.~Purchase, and B.~Pinaud.
+\newblock Animation, small multiples, and the effect of mental map preservation
+  in dynamic graphs.
+\newblock 17(4):539--552.
+
+\bibitem{bach2014graphdiaries}
+B.~Bach, E.~Pietriga, and J.-D. Fekete.
+\newblock Graphdiaries: animated transitions andtemporal navigation for dynamic
+  networks.
+\newblock {\em Visualization and Computer Graphics, IEEE Transactions on},
+  20(5):740--754, 2014.
+
+\bibitem{bederson1994pad}
+B.~B. Bederson and J.~D. Hollan.
+\newblock Pad++: a zooming graphical interface for exploring alternate
+  interface physics.
+\newblock In {\em Proceedings of the 7th annual ACM symposium on User interface
+  software and technology}, pages 17--26. ACM, 1994.
+
+\bibitem{cockburn2008review}
+A.~Cockburn, A.~Karlson, and B.~B. Bederson.
+\newblock A review of overview+ detail, zooming, and focus+ context interfaces.
+\newblock {\em ACM Computing Surveys (CSUR)}, 41(1):2, 2008.
+
+\bibitem{farrugia2011effective}
+M.~Farrugia and A.~Quigley.
+\newblock Effective temporal graph layout: A comparative study of animation
+  versus static display methods.
+\newblock {\em Information Visualization}, 10(1):47--64, 2011.
+
+\bibitem{fekete1999excentric}
+J.-D. Fekete and C.~Plaisant.
+\newblock Excentric labeling: dynamic neighborhood labeling for data
+  visualization.
+\newblock In {\em Proceedings of the SIGCHI conference on Human Factors in
+  Computing Systems}, pages 512--519. ACM, 1999.
+
+\bibitem{frederick2013effects}
+D.~Frederick, J.~Mohler, M.~Vorvoreanu, and R.~Glotzbach.
+\newblock The effects of parallax scrolling on user experience in web design.
+\newblock {\em Journal of Usability Studies}, 10(2), 2015.
+
+\bibitem{french1953discrimination}
+R.~S. French.
+\newblock The discrimination of dot patterns as a function of number and
+  average separation of dots.
+\newblock {\em Journal of Experimental Psychology}, 46(1):1, 1953.
+
+\bibitem{heckbert1997survey}
+P.~S. Heckbert and M.~Garland.
+\newblock Survey of polygonal surface simplification algorithms.
+\newblock Technical report, DTIC Document, 1997.
+
+\bibitem{huron2013visual}
+S.~Huron, R.~Vuillemot, and J.-D. Fekete.
+\newblock Visual sedimentation.
+\newblock {\em Visualization and Computer Graphics, IEEE Transactions on},
+  19(12):2446--2455, 2013.
+
+\bibitem{igarashi2000speed}
+T.~Igarashi and K.~Hinckley.
+\newblock Speed-dependent automatic zooming for browsing large documents.
+\newblock In {\em Proceedings of the 13th annual ACM symposium on User
+  interface software and technology}, pages 139--148. ACM, 2000.
+
+\bibitem{kondo_dimpvis:_2014}
+B.~Kondo and C.~Collins.
+\newblock {DimpVis}: Exploring time-varying information visualizations by
+  direct manipulation.
+\newblock 20(12):2003--2012.
+
+\bibitem{miller_infocanvas:_2001}
+T.~Miller and J.~Stasko.
+\newblock The {InfoCanvas}: information conveyance through personalized,
+  expressive art.
+\newblock In {\em {CHI}'01 Extended Abstracts on Human Factors in Computing
+  Systems}, pages 305--306. {ACM}.
+
+\bibitem{nowell_change_2001}
+L.~Nowell, E.~Hetzler, and T.~Tanasse.
+\newblock Change blindness in information visualization: A case study.
+\newblock In {\em Information Visualization, {IEEE} Symposium on}, pages
+  15--15. {IEEE} Computer Society.
+
+\bibitem{perlin1993pad}
+K.~Perlin and D.~Fox.
+\newblock Pad: an alternative approach to the computer interface.
+\newblock In {\em Proceedings of the 20th annual conference on Computer
+  graphics and interactive techniques}, pages 57--64. ACM, 1993.
+
+\bibitem{plaisant2002spacetree}
+C.~Plaisant, J.~Grosjean, and B.~B. Bederson.
+\newblock Spacetree: Supporting exploration in large node link tree, design
+  evolution and empirical evaluation.
+\newblock In {\em Information Visualization, 2002. INFOVIS 2002. IEEE Symposium
+  on}, pages 57--64. IEEE, 2002.
+
+\bibitem{robertson_effectiveness_2008}
+G.~Robertson, R.~Fernandez, D.~Fisher, B.~Lee, and J.~Stasko.
+\newblock Effectiveness of animation in trend visualization.
+\newblock 14(6):1325--1332.
+
+\bibitem{rosling_gapminder_2006}
+H.~Rosling.
+\newblock {\em Gapminder: http://www.gapminder.org/}.
+
+\bibitem{schlienger2007improving}
+C.~Schlienger, S.~Conversy, S.~Chatty, M.~Anquetil, and C.~Mertz.
+\newblock Improving users’ comprehension of changes with animation and sound:
+  An empirical assessment.
+\newblock In {\em Human-Computer Interaction--INTERACT 2007}, pages 207--220.
+  Springer, 2007.
+
+\bibitem{tekusova_applying_2007}
+T.~Teku{\v{s}}ov{\'a} and J.~Kohlhammer.
+\newblock Applying animation to the visual analysis of financial time-dependent
+  data.
+\newblock In {\em Information Visualization, 2007. IV'07. 11th International
+  Conference}, pages 101--108. IEEE, 2007.
+
+\bibitem{van2003smooth}
+J.~J. Van~Wijk and W.~A. Nuij.
+\newblock Smooth and efficient zooming and panning.
+\newblock In {\em Information Visualization, 2003. INFOVIS 2003. IEEE Symposium
+  on}, pages 15--23. IEEE, 2003.
+
+\bibitem{yamaguchi1988curves}
+F.~Yamaguchi and F.~Yamaguchi.
+\newblock {\em Curves and surfaces in computer aided geometric design}.
+\newblock Springer-Verlag Berlin, 1988.
+
+\bibitem{yi_toward_2007}
+J.~S. Yi, Y.~ah~Kang, J.~T. Stasko, and J.~A. Jacko.
+\newblock Toward a deeper understanding of the role of interaction in
+  information visualization.
+\newblock {\em Visualization and Computer Graphics, IEEE Transactions on},
+  13(6):1224--1231, 2007.
+
+\end{thebibliography}

@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+
+<script src="scripts/d3.v3.min.js"></script>
+<script src="scripts/jquery-1.10.2.js"></script>
+<script src="scripts/jquery-ui.js"></script>
+<link href="scripts/jquery-ui.css" rel="stylesheet" />
+
+<script src="multiview/multi.js"></script>
+<style>
+    .multiviewbox {
+        float: left;
+        width: 15%;
+        border-style: solid;
+        border-color: lightgray;
+    }
+</style>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    filter by population:
+        <div id="popfilter"></div>
+        <div id="popfilter-text"></div>
+    time window: 
+        <div id="timewindow"></div>
+        <div id="timewindow-text"></div>
+
+    attribute x:
+    <select name="dx" class="dims">
+        <option value="ppp" selected>Average Income</option>
+        <option value="le">Life Expectancy</option>
+        <option value="kids">Children per Woman</option>
+        <option value="mortal">Child Mortality</option>
+    </select>
+    attribute y:
+    <select name="dy" class="dims">
+        <option value="ppp">Average Income</option>
+        <option value="le" selected>Life Expectancy</option>
+        <option value="kids">Children per Woman</option>
+        <option value="mortal">Child Mortality</option>
+    </select>
+    
+    <div id="multi"></div>
+</body>
+</html>

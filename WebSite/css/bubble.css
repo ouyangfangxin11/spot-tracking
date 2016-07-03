@@ -1,0 +1,54 @@
+﻿    #dragbar {
+        float:left;
+        width:1px;
+        height: 90000px;
+    }
+
+    #chartwrap{
+        position:fixed;
+        float:left;
+        width:70%;
+    }
+
+    .noselect {
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    .focusoption {
+        min-width: 150px;
+        height: 30px;
+        display: inline-block;
+        margin: 5px;
+        border-style: solid;
+        border-width: 2px;
+        background-color: lightgray;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    .inline {
+        display: inline;
+    }
+
+    .box {
+        width: 98%;
+        border-style: solid;
+        border-width: 5px;
+        margin-top: 4px;
+    }
+
+    .g_axis path{
+        fill: none;
+        stroke: black;
+        shape-rendering: crispEdges;
+    }
+    .axis path {
+        fill: none;
+        stroke: black;
+        shape-rendering: crispEdges;
+    }

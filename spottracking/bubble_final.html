@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html>
+<script>
+    clickevent = 2; //1 add label to bubble when it in neighbor, 2 add to selected layer, 0 no event
+    initialselect = 64//87 Japan, 187 United States, 64 germany, 35 China, 15 Belrus, 23 Brazil, 146 Russia
+    initialscale = 6 //initial zoom in a little bit
+    initialpos = 1944 //initial position
+    highlightlist = [] // remove from neighbor list
+    patternLabel = 0 //0 labels pattern, 1 manual label, 2 label all
+    cameraView = true; //cameraView: need update camera pos in animation
+    neighflag = false; //update neighbor when the scale changed
+    dragflag = true;
+    selectflag = true;//use can selected bubble
+    zoomflag = false;
+    spotlightflag = true;
+    
+</script>
+
+<script src="scripts/d3.v3.min.js"></script>
+<script src="scripts/jquery-1.10.2.js"></script>
+<script src="scripts/jquery-ui.js"></script>
+<script src="scripts/jquery.timer.js"></script>
+<script src="scripts/douglasPeucker.js"></script>
+<link href="scripts/jquery-ui.css" rel="stylesheet" />
+
+<script src="lens/basic.js"></script>
+<script src="lens/camera.js"></script>
+<script src="lens/highlight.js"></script>
+<script src="lens/playcontrol.js"></script>
+<script src="lens/setCameraView.js"></script>
+<script src="lens/solo.js"></script>
+<link href="lens/bubble.css" rel="stylesheet" />
+
+<script src="multi/multi.js"></script>
+<link href="multi/multi.css" rel="stylesheet" />
+
+<link href="multi/article.css" rel="stylesheet" />
+<script src="side/global.js"></script>
+<script src="side/line.js"></script>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Bubble Chart</title>
+</head>
+<body>
+    <div id="chartwrap">
+        <br />
+        <div class="title">SpotLens:</div>
+        <div id="chart"></div>
+    </div>
+
+    <div id="dragbar"></div>
+
+    <div id="sidewrap">
+        <br />
+        <div class="title">Overview:</div>
+        <!--<input type="button" value="Light Up" onclick="lightup()" style="float:right"/>-->
+        <div id="global"></div>
+        <br />
+        <div data-axis="x" data-dim="ppp" class="linechart" ></div>
+        <br />
+        <div data-axis="y" data-dim="le" class="linechart"></div>
+    </div>
+    <!--<div id="article"></div>-->
+
+    <div id="show_btn">
+        <input type="button" onclick="show_btn()" value="Show Menu" />
+    </div>
+
+    <div id="foot">       
+        <div id="foot_menu">
+            <input type="button" onclick="data_source_btn()" value="Data Source"/>
+            <input type="button" onclick="toolbar_btn()" value="Preference" />
+            <input type="button" onclick="hide_btn()" value="Hide This" />
+        </div>
+        <div id="data_source">
+            <div id="multi"></div>
+        </div>
+        <div id="foot_panel">
+            <div id="toolpane" class="toolbar">
+                <table>
+                    <tr>
+                        <td>SEARCH:</td>
+                        <td><input id="search" /></td>
+                    </tr>
+                    <tr class="cameratool">
+                        <td>PANNING:</td>
+                        <td>
+                            <form class="inline">
+                                <input type="radio" name="camera" value="stage" checked>Stepwise
+                                <input type="radio" name="camera" value="follow">Continuous
+                                <!--<input type="radio" name="camera" value="center">Center-->
+                            </form>
+                        </td>
+                    </tr>
+                    <tr class="spotlighttool">
+                        <td>
+                            SPOTLIGHT
+                        </td>
+                        <td>
+                            light:<input type="range" min="0.15" max="1" value="0.7" step="0.01" id="spotrange" /><br />
+                            size: <input type="range" min="0.5" max="3" value="1" step="0.01" id="spotsizerange" />
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td>
+                            <input type="button" id="autobtn" value="auto play" onclick="autoplay()" />
+                            <div class="inline" id="speedlabel"></div>
+                        </td>
+                        <td><input type="range" min="1" max="10" value="3" step="0.1" id="speedrange" /></td>
+                    </tr>
+                    <tr class="labeltool">
+                        <td>
+                            FILTER:<div class="inline" id="filterlabel">5</div>
+                        </td>
+                        <td>
+                            <input type="range" min="0" max="50" value="5" step="1" id="filterrange" />
+                        </td>
+                    </tr>
+                    <tr class="labeltool">
+                        <td>Labeling</td>
+                        <td>
+                            <form>
+                                <input type="radio" name="lightevent" value="fast">Fast
+                                <input type="radio" name="lightevent" value="close" checked>Close
+                            </form>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td>Tracing</td>
+                        <td>
+                            <input type="checkbox" name="trace" checked>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Background</td>
+                        <td>
+                            <input type="checkbox" name="bgtexture" checked>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Masking</td>
+                        <td>
+                            <input type="checkbox" name="size">Size
+                            <input type="checkbox" name="color" checked>Color
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Select:</td>
+                        <td><input type="button" class="labeltool" value="clean label" onclick="cleanlist()" /></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

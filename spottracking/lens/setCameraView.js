@@ -1,0 +1,1 @@
+﻿enableCamera = true;
